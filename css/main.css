@@ -119,7 +119,7 @@ body {
   margin-top: 50px;
 }
 
-.div-1, .div-2, .div-3 {
+.div-heading, .div-1, .div-2, .div-3 {
   /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
   display: flex;
   justify-content: center;
@@ -133,13 +133,22 @@ body {
 }
 
 
-
 a {
     color: #009FB7;
     text-decoration: none;
 }
 
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
 
+.icon {
+    padding: 5px;
+
+}
 
 /* ==========================================================================
    Helper classes
@@ -227,18 +236,27 @@ a {
 
     }
 
+    h1 {
+        font-size: 2.3em;
+    }
+
     p {
         font-size: 1.3em;
         line-height: 1.1em;
     }
 
-    .div-1, .div-2{
+    .div-2{
         border-right: dashed 1px #EFF1F3;
+        border-left: dashed 1px #EFF1F3;
     }
 
     .div-1, .div-2, .div-3 {
         border-bottom: none;
         
+    }
+
+    .div-heading {
+        font-size: 1.5em;
     }
 }
 
@@ -247,6 +265,10 @@ a {
     .wrapper {
         flex-direction: row;
         height: 50%;
+    }
+
+    h1 {
+        font-size: 3em;
     }
     p { 
         font-size: 1.5em;
@@ -258,6 +280,10 @@ a {
 
     .div-1, .div-2, .div-3 {
         border-bottom: none;
+    }
+
+    .div-heading {
+        font-size: 1.8em;
     }
 }
 @media print,
